@@ -1,7 +1,20 @@
-﻿
+﻿@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.Mvc
 @{
-    ViewBag.Title = "Home";
+    Layout = null;
 }
 
-<h2>Home</h2>
+<!DOCTYPE html>
 
+<html>
+<head>
+    @Html.Sitecore().VisitorIdentification()
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+</head>
+<body>
+    <div> 
+        @Html.Sitecore().Placeholder("content")
+    </div>
+</body>
+</html>

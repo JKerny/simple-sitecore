@@ -10,10 +10,14 @@ namespace PlaySitecore.Controllers
 {
     public class HomeController : Controller
     {
+        ISitecoreContext _context;
+        public HomeController(ISitecoreContext context)
+        {
+            _context = context;
+        }
         // GET: Home
         public ActionResult Index()
-        {
-            ISitecoreContext _context = new SitecoreContext();
+        {         
             var model = _context.GetCurrentItem<Home>();
             return View(model);
         }

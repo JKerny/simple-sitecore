@@ -1,5 +1,6 @@
 <h1>Sitecore Example Site</h1>
-<p>This is an example demonstraing the use of Glass as an orm for sitecore and unicorn for serialisation</p>
+<p>This is an example demonstraing the use of Glass as an orm for sitecore, unicorn for serialisation and sitecore's dependancy injection
+which extends microsoft's DI</p>
 <h2>Steps to setup</h2>
 <ul>
 <ol>Create a clean running sitecore install for use as a sandbox. This solution has only been tested against SC 8.2.5</ol>
