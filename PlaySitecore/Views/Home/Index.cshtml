@@ -3,3 +3,10 @@
 <h1>@Editable(Model, x => x.Title)</h1>
 
 <div>@Editable(Model, x=>x.Text)</div>
+
+@foreach(var item in Model.GalleryItems)
+{
+    <h2>@Editable(item,x=>x.Title)</h2>
+    <p>@Editable(item, x => x.Description)</p>
+    <p>@RenderImage(item, x => x.Image,null,isEditable:true)</p>
+}
